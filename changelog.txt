@@ -274,3 +274,278 @@ webSPELL version... just use a diff tool of your choice. Nearly every single fil
 changed including very massive changes. Also a lot of new files have been added to implement
 the additional features of the Society Edition.
 
+################################################## ########################
+##
+＃4版///＃
+＃-----------__---/____ - __----------__---/---/ - ＃
+＃|/|//___）/）（_`/）/___）//＃
+＃_|/_|/__（____（___/_（__）___/___/_（____/___/___＃
+＃免费内容/管理系统＃
+＃/＃
+##
+##
+＃版权所有2005-2010由webspell.org＃
+##
+＃参观webSPELL.org，webspell.info获得webSPELL免费＃
+＃ - 脚本在GNU通用公共许可证＃运行
+＃ - 它不是不允许删除此版权标签＃
+＃ - ＃http://www.fsf.org/licensing/licenses/gpl.html
+##
+＃ - 基于WebSPELL Clanpackage（webspell.at迈克尔·格鲁伯）＃代码
+＃远东发展由开发团队 - webspell.org＃
+##
+＃访问webspell.org＃
+##
+################################################## ########################
+
+################################################## ########################
+##
+＃4版///＃
+＃-----------__---/____ - __----------__---/---/ - ＃
+＃|/|//___）/）（_`/）/___）//＃
+＃_|/_|/__（____（___/_（__）___/___/_（____/___/___＃
+＃协会/版＃
+＃/＃
+##
+＃由webspell修改| k3rmit（斯特凡捷）在2009年＃
+##
+＃ - 修改是在GNU通用公共许可证发布＃
+＃ - 不允许删除此版权标签＃
+＃ - ＃http://www.fsf.org/licensing/licenses/gpl.html
+##
+################################################## ########################
+
+### webspell4.2.2a（2010-02-28）rev.430（新SVN服务器）
+
+*（全部或大量的文件/文件夹）：
+   - 改变版权声明
+
+*_functions.php：
+   - 性能优化
+   - 检查禁令即将到期的每一天的每一个小时，而不是
+   - 固定的禁令消除方法
+   - 美元加使用GLOBALS['IP']
+   - 固定网址验证
+  
+*_settings.php：
+   - 安全修补程序：security_slashes添加使用（$ _ REQUEST）
+  
+*管理/ boards.php：
+   - 固定在船上的缺失去除阴影主题
+  
+*管理员/语言/*/ squads.php：
+   - 删除未使用的语言键
+  
+*管理员/语言/英国/ modules.php
+   - 固定的拼写
+  
+*管理/ modules.php：
+   - 数据库翻译添加新语言后，固定用法
+
+*管理/ modules_boxed.php：
+   - 数据库翻译添加新语言后，固定用法
+  
+*管理/ navigation.php：
+   - 数据库翻译添加新语言后，固定用法
+  
+*管理/ page_statistics.php：
+   - 删除E_STRICT/ E_DEPRECATED错误
+   - 固定查询失败，如果数据库名称包含特殊字符
+   - 所有表的固定显示
+  
+*管理/ registerfields.php：
+   - 数据库翻译添加新语言后，固定用法
+  
+*管理/ squads.php：
+   - 为班长图片/删除图标的大小限制
+   - 使用IMAGETYPE常数，而不是自己的价值观
+  
+*管理/ users.php：
+   - 取代的mysql_query与safe_query
+  
+* articles.php：
+   - 取代的mysql_query与safe_query
+  
+* asearch.php：
+   - 安全修复：修复SQL注入可能性
+   - 有限的模板使用
+  
+* calendar.php：
+   - 在日历中固定的空行
+   - 固定注册到事件的无限量
+  
+*的comments.php：
+   - 美元加使用GLOBALS['IP']
+   - 非固定字符串翻译
+   - 添加的语言变量
+   - 固定W3C验证错误
+  
+* contact.php：
+   - 安全修复：修复可能性将消息发送到任何电子邮件地址
+   - 美元加使用GLOBALS['IP']
+  
+* data.php：
+   - 固定的拼写
+  
+* forum.php：
+   - 语言文件中删除双重负荷
+   - 移除双重声明计数器变量
+  
+* forum_topic.php：
+   - 固定的可能性，以节省主题没有名字
+   - 固定的论坛行列
+   - 固定置顶主题功能
+   - 删除未使用的语言变量
+  
+* guestbook.php：
+   - 美元加使用GLOBALS['IP']
+   - 固定W3C验证错误
+  
+*安装/ index.php文件：
+   - 删除未使用的代码
+   - 删除未使用的语言键
+  
+*安装/ functions.php中：
+   - 修正错误的默认网站标题
+  
+*安装/语言/*/ index.php的
+   - 删除未使用的语言键
+  
+*安装/步*.PHP：
+   - 移除语言选择标志
+   - 步固定对齐
+  
+*安装/ step01.php：
+   - 替换字符>与＆GT;
+  
+*安装/ step03.php：
+   - 替换字符>与＆GT;
+  
+*安装/ style.css中：
+   - 步固定对齐
+  
+* JS/ bbcode.js：
+   - 增加了额外的特殊字符的设置高亮跳棋searchregexp
+  
+*语言/*/的comments.php：
+   - 添加的语言变量
+  
+*语言/*/ contact.php：
+   - 安全修复：修复可能性将消息发送到任何电子邮件地址
+  
+*语言/*/ forum.php：
+   - 删除未使用的语言变量
+  
+*语言/*/ latesttopics.php：
+   - 添加的语言变量
+  
+*语言/*/ rating.php：
+   - 固定评级的错误信息
+  
+*语言/*/ register.php：
+   - 注册固定可能性，如果你是媒体链接登录
+   - 添加的语言变量
+  
+*语言/德/ countries.php：
+   - 固定的拼写
+  
+*语言/英国/ articles.php：
+   - 固定的拼写
+  
+*语言/英国/ calendar.php：
+   - 固定的拼写
+  
+*语言/英国/ counter.php：
+   - 固定的拼写
+  
+*语言/英国/ register.php：
+   - 固定的拼写
+  
+* latesttopics.php：
+   - 添加的语言变量
+  
+* myprofile.php：
+   - 固定的默认语言选择
+  
+* news.php：
+   - 固定的新闻标题中是否含有用户名
+  
+* out.php：
+   - 修正了在“HTTP：//”
+  
+* partners.php：
+   - 只有文字，而不是合作伙伴的图像的可能性增加
+  
+* profile.php：
+   - 美元加使用GLOBALS['IP']
+   - 取代的mysql_query与safe_query
+   - 固定的论坛行列
+
+* rating.php：
+   - 固定评级的错误信息
+  
+* register.php：
+   - 注册固定可能性，如果你是媒体链接登录
+   - 添加的语言变量
+  
+* sc_headlines.php：
+   - 固定专栏的用法
+  
+* search.php中：
+   - 添加到用strtolower文章标题测试
+  
+* shoutbox_content.php：
+   - 安全修复：修复SQL注入可能性
+   - 美元加使用GLOBALS['IP']
+  
+* sponsors.php：
+   - 修正了在“HTTP：//”
+  
+* SRC/ FUNC/ bbcode.php：
+   - 固定img标签取代
+   - 固定的PNG图像信息
+   - IMG调整大小固定禁用
+   - 增加了表格标签htmlml
+   - 固定网址更换
+  
+* SRC/ seo.php：
+   - 固定SEO标题server.php
+  
+*模板/ addbbcode.html：
+   - 固定的选择
+  
+*模板/ comments_add_visitor.html：
+   - 增加了ID=“邮报”的表单标签
+  
+*模板/ guestbook_comment.html：
+   - 固定W3C验证错误
+  
+*模板/ latesttopics_content.html
+   - 添加的语言变量
+  
+*模板/ myprofile_editmail.html
+   - 移除双幅进入
+  
+*模板/ myprofile_editpwd.html
+   - 移除双幅进入
+  
+*模板/ sc_partners.html：
+   - 只有文字，而不是合作伙伴的图像的可能性增加
+  
+* version.php：
+   - 提出版本编号
+
+
+### webSPELL学会版4.2.1a（2009-07-30）rev.3398
+
+由于这是公会版的第一个最终版本没有太大的更新日志中。
+
+对于那些谁是想知道在最初版本更新高版本号：它反映了
+经常电子竞技webSPELL版本，版本号为常规的所有错误修正
+webSPELL4.2.1a - 只要他们任何关注社会版的文件 - 有
+被移植到了社会版了。
+
+对于那些想知道谁已给每个文件，这改变相比常规
+webSPELL版本...只是用你选择的比较工具。几乎每一个文件已经
+改变包括非常巨大的变化。也有很多新的文件已被添加到实施
+公会版的附加功能。
